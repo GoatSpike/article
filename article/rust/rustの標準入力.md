@@ -1,4 +1,4 @@
-1.  ​単一の整数入力
+1.  Single integer input
 ```rust:main.rs
 use proconio::input;
 
@@ -11,17 +11,18 @@ fn main() {
 ```
 
 
-入力例:
+Input Exapmple:
 ```
 42
 ```
-出力例:
+Output Exapmple:
 ```
 You entered: 42
 ```
 
 
-2.  ​複数のスペース区切り整数入力
+2.  Multiple space-separated integer inputs
+
 ```rust:main.rs
 use proconio::input;
 
@@ -35,17 +36,17 @@ fn main() {
 }
 ```
 
-入力例:
+Input Exapmple:
 ```
 10 20 30
 ```
 
-出力例:
+Output Exapmple:
 ```
 You entered: 10 20 30
 ```
 
-3.  ​文字列入力
+3.  String input
 ```rust:main.rs
 use proconio::input;
 
@@ -57,17 +58,18 @@ fn main() {
 }
 ```
 
-入力例:
+Input Exapmple:
 ```
 hello
 ```
 
-出力例:
+Output Exapmple:
 ```
 You entered: hello
 ```
 
-4.  ​複数のスペース区切り文字列入力
+4.  Multiple space-separated string inputs
+
 ```rust:main.rs
 use proconio::input;
 
@@ -86,13 +88,13 @@ fn main() {
 hello world program
 ```
 
-出力例:
+Output Exapmple:
 ```
 You entered: hello, world, program
 ```
 
 
-5.  ​1次元配列（ベクタ）入力
+5.  Single-dimensional array (vector) input
 ```rust:main.rs
 use proconio::input;
 
@@ -105,18 +107,18 @@ fn main() {
 }
 ```
 
-入力例:
+Input Exapmple:
 ```
 5
 1 2 3 4 5
 ```
 
-出力例:
+Output Exapmple:
 ```
 Vector: [1, 2, 3, 4, 5]
 ```
 
-6.  ​2次元配列（ベクタのベクタ）入力
+6.  Two-dimensional array (vector of vectors) input
 ```rust:main.rs
 use proconio::input;
 
@@ -132,7 +134,7 @@ fn main() {
 }
 ```
 
-入力例:
+Input Exapmple:
 ```
 3 3
 1 2 3
@@ -141,14 +143,15 @@ fn main() {
 
 ```
 
-出力例:
+Output Exapmple:
 ```
 [1, 2, 3]
 [4, 5, 6]
 [7, 8, 9]
 ```
 
-7.  ​単一行に含まれる整数のリスト入力
+7.  List of integers in a single line input
+
 ```rust:main.rs
 use proconio::input;
 
@@ -162,18 +165,18 @@ fn main() {
 ```
 
 
-入力例:
+Input Exapmple:
 ```
 4
 10 20 30 40
 ```
 
-出力例:
+Output Exapmple:
 ```
 List: [10, 20, 30, 40]
 ```
 
-8.  ​複数行の整数のリスト入力
+8.  List of integers over multiple lines input
 ```rust:main.rs
 use proconio::input;
 
@@ -190,21 +193,21 @@ fn main() {
 ```
 
 
-入力例:
+Input Exapmple:
 ```
 2 3
 1 2 3
 4 5 6
 ```
 
-出力例:
+Output Exapmple:
 ```
 [1, 2, 3]
 [4, 5, 6]
 ```
 
 
-9.  ​タプル入力
+9.  Tuple input
 ```rust:main.rs
 use proconio::input;
 
@@ -217,18 +220,19 @@ fn main() {
 ```
 
 
-入力例:
+Input Exapmple:
 ```
 100 200
 ```
 
-出力例:
+Output Exapmple:
 ```
 Pair: (100, 200)
 ```
 
 
-10. ​複数の異なる型の入力
+10. Multiple types of inputs
+
 ```rust:main.rs
 use proconio::input;
 
@@ -242,18 +246,18 @@ fn main() {
 }
 ```
 
-入力例:
+Input Exapmple:
 ```
 42 3.14 A
 ```
 
-出力例:
+Output Exapmple:
 ```
 Integer: 42, Float: 3.14, Char: A
 ```
 
 
-11. ​複数行テキスト入力
+11. Input multiple lines of text
 ```rust:main.rs
 use proconio::input;
 
@@ -269,7 +273,7 @@ fn main() {
 ```
 
 
-入力例:
+Input Exapmple:
 ```
 3
 hello
@@ -278,7 +282,7 @@ rust
 ```
 
 
-出力例:
+Output Exapmple:
 ```
 hello
 world
