@@ -1,4 +1,4 @@
-# Go言語のゴルーチン（Goroutine）について
+# Go言語のゴルーチン（Goroutine）と同期化オブジェクト(Mutex, WaitGroup, errgroup)
 
 ## 初めに
 
