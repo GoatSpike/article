@@ -9,9 +9,12 @@
 Go言語は、`並行処理`（並行プログラミングとも言われる）を簡単に実装できるように設計されています。Goでは、並行処理を行うための軽量なスレッド「ゴルーチン（goroutine）」というものがあります。
 
 通常プログラミングにおいてタスク1が完了したら、タスク2に取り掛かる逐次処理が基本となっています。並列処理は逐次処理とは違い、タスク1とタスク2を交互に進めることができます。この場合、並列処理はシングルコア・マルチスレッドで処理を行います。
-- 並行処理：複数の処理を1つの主体が切り替えながらこなすこと。実行時間が早くなる（かもしれない）（引用：[並行処理、並列処理、同期処理、非同期処理についてまとめ](https://qiita.com/kyabetsuda/items/384a57ff6b7250de40ad)）
-- シングルコア：1つのCPUに対して1つのコアが内蔵されているCPU。コアとはCPUにある機能の事で実際に処理を行う部品になります。（引用:[CPUの「コア数」「クロック周波数」「スレッド数」とは？](https://dosparaplus.com/library/details/000646.html)）
-- マルチスレッド：1つのコンピュータープログラムを実行する際に、アプリケーションのプロセス（タスク）を複数のスレッドに分けて並行処理する流れの事(引用:[マルチスレッドとは](https://wa3.i-3-i.info/word12455.html))
+- 並行処理：複数の処理を1つの主体が切り替えながらこなすこと。実行時間が早くなる（かもしれない）
+  - 引用:[並行処理、並列処理、同期処理、非同期処理についてまとめ](https://qiita.com/kyabetsuda/items/384a57ff6b7250de40ad)
+- シングルコア：1つのCPUに対して1つのコアが内蔵されているCPU。コアとはCPUにある機能の事で実際に処理を行う部品になります。（
+  - 引用:[CPUの「コア数」「クロック周波数」「スレッド数」とは？](https://dosparaplus.com/library/details/000646.html)
+- マルチスレッド：1つのコンピュータープログラムを実行する際に、アプリケーションのプロセス（タスク）を複数のスレッドに分けて並行処理する流れの事
+  - 引用:[マルチスレッドとは](https://wa3.i-3-i.info/word12455.html)
 
 
 調べてて勉強になった事して、並行処理と**並列処理**はぜんぜん違うという事です。
@@ -427,3 +430,12 @@ func main() {
 	fmt.Println("All items processed.")
 }
 ```
+
+
+引用
+- [並行処理、並列処理、同期処理、非同期処理についてまとめ](https://qiita.com/kyabetsuda/items/384a57ff6b7250de40ad)）
+- [CPUの「コア数」「クロック周波数」「スレッド数」とは？](https://dosparaplus.com/library/details/000646.html)）
+- [マルチスレッドとは](https://wa3.i-3-i.info/word12455.html)
+- [並行処理と並列処理](https://zenn.dev/hsaki/books/golang-concurrency/viewer/term)
+- [Goroutine はなぜ軽量スレッドと称されるのか](https://www.ren510.dev/blog/goroutine-concurrency)
+- [【Go言語入門】goroutineとは？ 実際に手を動かしながら goroutineの基礎を理解しよう](https://www.ariseanalytics.com/activities/report/20221005/)
